@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hybrid Routine Tracker</title>
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <div id="auth-screen">
+      <h2 id="auth-title">Log in</h2>
+      <form id="auth-form">
+        <label>Username
+          <input type="text" id="auth-username" required minlength="3" maxlength="50" autocomplete="username">
+        </label>
+        <label>Password
+          <input type="password" id="auth-password" required minlength="8" autocomplete="current-password">
+        </label>
+        <div class="error-text" id="auth-error"></div>
+        <button type="submit" class="primary" id="auth-submit">Log in</button>
+      </form>
+      <div class="switch">
+        <span id="auth-switch-text">Need an account?</span>
+        <a id="auth-switch-link">Register</a>
+      </div>
+    </div>
+
+    <header class="app-header hidden" id="app-header">
+      <h1>Hybrid Routine Tracker</h1>
+      <div>
+        <span id="current-user"></span>
+        <button type="button" id="logout-btn">Log out</button>
+      </div>
+    </header>
+
+    <main class="app-main hidden" id="app-main">
+      <div id="schedule-strip"></div>
+      <div id="family-grid"></div>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

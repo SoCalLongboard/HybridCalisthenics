@@ -1,0 +1,349 @@
+{
+ "schedule": {
+  "monday": ["Pushups", "Leg Raises"],
+  "tuesday": ["Pullups", "Squats"],
+  "wednesday": ["Bridges", "Twists"],
+  "thursday": ["Pushups", "Leg Raises"],
+  "friday": ["Pullups", "Squats"],
+  "saturday": ["Bridges", "Twists"],
+  "sunday": []
+ },
+ "families": {
+  "Pushups": [
+   {
+    "name": "Wall Pushups",
+    "level1": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" },
+    "level2": { "sets": 2, "reps": 50, "unit": "reps", "perSide": false, "raw": "2 sets of 50" },
+    "level3": { "sets": 3, "reps": 50, "unit": "reps", "perSide": false, "raw": "3 sets of 50" }
+   },
+   {
+    "name": "Incline Pushups",
+    "level1": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level2": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" },
+    "level3": { "sets": 3, "reps": 40, "unit": "reps", "perSide": false, "raw": "3 sets of 40" }
+   },
+   {
+    "name": "Advanced Incline Pushups",
+    "level1": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level2": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" },
+    "level3": { "sets": 3, "reps": 35, "unit": "reps", "perSide": false, "raw": "3 sets of 35" }
+   },
+   {
+    "name": "Knee Pushups",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 sets of 30" }
+   },
+   {
+    "name": "Full Pushups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 3, "reps": 25, "unit": "reps", "perSide": false, "raw": "3 sets of 25" }
+   },
+   {
+    "name": "Narrow Pushups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level3": { "sets": 3, "reps": 20, "unit": "reps", "perSide": false, "raw": "3 sets of 20" }
+   },
+   {
+    "name": "Side-Staggered Pushups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 sets of 5 (per side)" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": true, "raw": "2 sets of 10 (per side)" },
+    "level3": { "sets": 2, "reps": 20, "unit": "reps", "perSide": true, "raw": "2 sets of 20 (per side)" }
+   },
+   {
+    "name": "Archer Pushups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 sets of 5 (per side)" },
+    "level2": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 sets of 9 (per side)" },
+    "level3": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 sets of 12 (per side)" }
+   },
+   {
+    "name": "Sliding One-Arm Pushups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 sets of 5 (per side)" },
+    "level2": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 sets of 9 (per side)" },
+    "level3": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 sets of 12 (per side)" }
+   },
+   {
+    "name": "One Arm Pushups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 sets of 3 (per side)" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 sets of 6 (per side)" },
+    "level3": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 sets of 9 (per side)" }
+   },
+   {
+    "name": "Advanced One-Arm Pushups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 sets of 3 (per side)" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 sets of 6 (per side)" },
+    "level3": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 sets of 9 (per side)" }
+   }
+  ],
+  "Leg Raises": [
+   {
+    "name": "Knee Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" }
+   },
+   {
+    "name": "Advanced Knee Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" }
+   },
+   {
+    "name": "Alternating Leg Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   },
+   {
+    "name": "Full Leg Raises",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   },
+   {
+    "name": "Tuck Plow Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   },
+   {
+    "name": "Plow Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   },
+   {
+    "name": "Hanging Knee Raises",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level3": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" }
+   },
+   {
+    "name": "Advanced Hanging Knee Raises",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level3": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" }
+   },
+   {
+    "name": "Hanging Leg Raises",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   },
+   {
+    "name": "Toe to Bars",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" }
+   }
+  ],
+  "Pullups": [
+   {
+    "name": "Wall Pullups",
+    "level1": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" },
+    "level2": { "sets": 2, "reps": 50, "unit": "reps", "perSide": false, "raw": "2 sets of 50" },
+    "level3": { "sets": 3, "reps": 50, "unit": "reps", "perSide": false, "raw": "3 sets of 50" }
+   },
+   {
+    "name": "Horizontal Pullups",
+    "level1": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level2": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 sets of 30" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 sets of 30" }
+   },
+   {
+    "name": "Advanced Horizontal Pullups",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 3, "reps": 25, "unit": "reps", "perSide": false, "raw": "3 sets of 25" }
+   },
+   {
+    "name": "Jackknife Pullups",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 sets of 5" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level3": { "sets": 3, "reps": 20, "unit": "reps", "perSide": false, "raw": "3 sets of 20" }
+   },
+   {
+    "name": "Full Pullups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": false, "raw": "2 sets of 3" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": false, "raw": "2 sets of 6" },
+    "level3": { "sets": 3, "reps": 12, "unit": "reps", "perSide": false, "raw": "3 sets of 12" }
+   },
+   {
+    "name": "Narrow Pullups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": false, "raw": "2 sets of 3" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": false, "raw": "2 sets of 6" },
+    "level3": { "sets": 3, "reps": 9, "unit": "reps", "perSide": false, "raw": "3 sets of 9" }
+   },
+   {
+    "name": "One Hand Pullups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 Sets of 3 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 Sets of 6 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" }
+   },
+   {
+    "name": "Advanced One Hand Pullups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 Sets of 3 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 Sets of 6 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" }
+   },
+   {
+    "name": "Archer Pullups",
+    "level1": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 Sets of 3 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 Sets of 6 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" }
+   },
+   {
+    "name": "One Arm Pullups",
+    "level1": { "sets": 1, "reps": 1, "unit": "reps", "perSide": true, "raw": "1 Set of 1 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 3, "unit": "reps", "perSide": true, "raw": "2 Sets of 3 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 6, "unit": "reps", "perSide": true, "raw": "2 Sets of 6 (Both Sides)" }
+   }
+  ],
+  "Squats": [
+   {
+    "name": "Jackknife Squats",
+    "level1": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 sets of 15" },
+    "level2": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 sets of 25" },
+    "level3": { "sets": 3, "reps": 35, "unit": "reps", "perSide": false, "raw": "3 sets of 35" }
+   },
+   {
+    "name": "Assisted Squats",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 sets of 30" }
+   },
+   {
+    "name": "Half Squats",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 3, "reps": 50, "unit": "reps", "perSide": false, "raw": "3 sets of 50" }
+   },
+   {
+    "name": "Full Squats",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 sets of 30" }
+   },
+   {
+    "name": "Narrow Squats",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 sets of 20" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 sets of 30" }
+   },
+   {
+    "name": "Side Staggered Squats",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": true, "raw": "2 Sets of 10 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 15, "unit": "reps", "perSide": true, "raw": "2 Sets of 15 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 20, "unit": "reps", "perSide": true, "raw": "2 Sets of 20 (Both Sides)" }
+   },
+   {
+    "name": "Front Staggered Squats",
+    "level1": { "sets": 2, "reps": 7, "unit": "reps", "perSide": true, "raw": "2 Sets of 7 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 Sets of 12 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 15, "unit": "reps", "perSide": true, "raw": "2 Sets of 15 (Both Sides)" }
+   },
+   {
+    "name": "Assisted One Leg Squats",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 Sets of 5 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 Sets of 12 (Both Sides)" }
+   },
+   {
+    "name": "One Leg Chair Squats",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 Sets of 5 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 Sets of 12 (Both Sides)" }
+   },
+   {
+    "name": "One Leg Squats",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": true, "raw": "2 Sets of 5 (Both Sides)" },
+    "level2": { "sets": 2, "reps": 9, "unit": "reps", "perSide": true, "raw": "2 Sets of 9 (Both Sides)" },
+    "level3": { "sets": 2, "reps": 12, "unit": "reps", "perSide": true, "raw": "2 Sets of 12 (Both Sides)" }
+   }
+  ],
+  "Bridges": [
+   {
+    "name": "Glute Bridges",
+    "level1": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 Sets of 15" },
+    "level2": { "sets": 2, "reps": 30, "unit": "reps", "perSide": false, "raw": "2 Sets of 30" },
+    "level3": { "sets": 2, "reps": 50, "unit": "reps", "perSide": false, "raw": "2 Sets of 50" }
+   },
+   {
+    "name": "Straight Bridges",
+    "level1": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 Sets of 15" },
+    "level2": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 Sets of 25" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 Sets of 30" }
+   },
+   {
+    "name": "Wall Bridges",
+    "level1": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 Sets of 15" },
+    "level2": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 Sets of 25" },
+    "level3": { "sets": 3, "reps": 30, "unit": "reps", "perSide": false, "raw": "3 Sets of 30" }
+   },
+   {
+    "name": "Incline Bridges",
+    "level1": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 Sets of 10" },
+    "level2": { "sets": 2, "reps": 20, "unit": "reps", "perSide": false, "raw": "2 Sets of 20" },
+    "level3": { "sets": 3, "reps": 25, "unit": "reps", "perSide": false, "raw": "3 Sets of 25" }
+   },
+   {
+    "name": "Head Bridges",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 Sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 Sets of 10" },
+    "level3": { "sets": 2, "reps": 25, "unit": "reps", "perSide": false, "raw": "2 Sets of 25" }
+   },
+   {
+    "name": "Full Bridges",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 Sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 Sets of 10" },
+    "level3": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 Sets of 15" }
+   },
+   {
+    "name": "Wheel Bridges",
+    "level1": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 Sets of 5" },
+    "level2": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 Sets of 10" },
+    "level3": { "sets": 2, "reps": 15, "unit": "reps", "perSide": false, "raw": "2 Sets of 15" }
+   },
+   {
+    "name": "Tap Bridges",
+    "level1": { "sets": 2, "reps": 5, "unit": "taps", "perSide": false, "raw": "2 Sets of 5 Taps" },
+    "level2": { "sets": 2, "reps": 20, "unit": "taps", "perSide": false, "raw": "2 Sets of 20 Taps" },
+    "level3": { "sets": 2, "reps": 30, "unit": "taps", "perSide": false, "raw": "2 Sets of 30 Taps" }
+   },
+   {
+    "name": "Wall Walking Bridges",
+    "level1": { "sets": 1, "reps": 3, "unit": "reps", "perSide": false, "raw": "1 Sets of 3" },
+    "level2": { "sets": 1, "reps": 6, "unit": "reps", "perSide": false, "raw": "1 Sets of 6" },
+    "level3": { "sets": 2, "reps": 10, "unit": "reps", "perSide": false, "raw": "2 Sets of 10" }
+   },
+   {
+    "name": "Stand to Stand Bridges",
+    "level1": { "sets": 1, "reps": 1, "unit": "reps", "perSide": false, "raw": "1 Set of 1" },
+    "level2": { "sets": 1, "reps": 3, "unit": "reps", "perSide": false, "raw": "1 Sets of 3" },
+    "level3": { "sets": 2, "reps": 5, "unit": "reps", "perSide": false, "raw": "2 Sets of 5" }
+   }
+  ],
+  "Twists": [
+   {
+    "name": "Straight Leg Twists",
+    "level1": { "sets": 3, "reps": 15, "unit": "seconds", "perSide": false, "raw": "3 Holds of 15 Seconds" },
+    "level2": { "sets": 3, "reps": 30, "unit": "seconds", "perSide": false, "raw": "3 Holds of 30 Seconds" },
+    "level3": { "sets": 3, "reps": 60, "unit": "seconds", "perSide": false, "raw": "3 Holds of 60 Seconds" }
+   },
+   {
+    "name": "Bent Leg Twists",
+    "level1": { "sets": 3, "reps": 15, "unit": "seconds", "perSide": false, "raw": "3 Holds of 15 Seconds" },
+    "level2": { "sets": 3, "reps": 30, "unit": "seconds", "perSide": false, "raw": "3 Holds of 30 Seconds" },
+    "level3": { "sets": 3, "reps": 60, "unit": "seconds", "perSide": false, "raw": "3 Holds of 60 Seconds" }
+   },
+   {
+    "name": "Full Twists",
+    "level1": { "sets": 3, "reps": 15, "unit": "seconds", "perSide": false, "raw": "3 Holds of 15 Seconds" },
+    "level2": { "sets": 3, "reps": 30, "unit": "seconds", "perSide": false, "raw": "3 Holds of 30 Seconds" },
+    "level3": { "sets": 3, "reps": 60, "unit": "seconds", "perSide": false, "raw": "3 Holds of 60 Seconds" }
+   }
+  ]
+ }
+}

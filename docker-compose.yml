@@ -1,0 +1,16 @@
+services:
+  hybrid-tracker:
+    build: .
+    ports:
+      - "${HOST_PORT:-8000}:8000"
+    environment:
+      - DATABASE_PATH=/data/hybrid-tracker.db
+      - PORT=8000
+      - SECRET_KEY=${SECRET_KEY:?SECRET_KEY must be set (see .env.example)}
+      - SECURE_COOKIES=${SECURE_COOKIES:-true}
+    volumes:
+      - hybrid-tracker-data:/data
+    restart: unless-stopped
+
+volumes:
+  hybrid-tracker-data:
