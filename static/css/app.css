@@ -219,6 +219,17 @@ main.app-main {
   font-weight: 600;
 }
 
+.family-card h3 a,
+.family-card .exercise-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.family-card h3 a:hover,
+.family-card .exercise-name a:hover {
+  text-decoration: underline;
+}
+
 .family-card .milestone {
   color: var(--text-dim);
   font-size: 0.85rem;

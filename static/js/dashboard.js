@@ -1,6 +1,7 @@
 import { api } from "./api.js";
 import { openLogPanel, scheduleForToday } from "./log.js";
 import { openHistoryPanel } from "./history.js";
+import { familyLink, exerciseLink } from "./links.js";
 
 export function initDashboard() {
   const grid = document.getElementById("family-grid");
@@ -101,8 +102,8 @@ export function initDashboard() {
     const card = document.createElement("div");
     card.className = "family-card" + (todaysFamilies.includes(fam.family) ? " is-today" : "");
     card.innerHTML = `
-      <h3>${fam.family}</h3>
-      <div class="exercise-name">${fam.exercise_name}</div>
+      <h3>${familyLink(fam.family)}</h3>
+      <div class="exercise-name">${exerciseLink(fam.exercise_name)}</div>
       <div class="milestone">Milestone: ${fam.milestone}</div>
       <div class="progress-bar-track">
         <div class="progress-bar-fill" style="width:${fam.progress_percent}%"></div>
