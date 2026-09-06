@@ -2,7 +2,7 @@ services:
   hybrid-tracker:
     build: .
     ports:
-      - "${HOST_PORT:-8000}:8000"
+      - "127.0.0.1:${HOST_PORT:-8000}:8000"
     environment:
       - DATABASE_PATH=/data/hybrid-tracker.db
       - PORT=8000
