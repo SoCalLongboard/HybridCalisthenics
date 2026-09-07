@@ -25,10 +25,26 @@
       </div>
     </div>
 
+    <div id="force-change-screen" class="hidden">
+      <h2>Set a new password</h2>
+      <p>An admin issued you a temporary password. Choose a new one to continue.</p>
+      <form id="force-change-form">
+        <label>Temporary password
+          <input type="password" id="force-change-current" required autocomplete="current-password">
+        </label>
+        <label>New password
+          <input type="password" id="force-change-new" required minlength="8" autocomplete="new-password">
+        </label>
+        <div class="error-text" id="force-change-error"></div>
+        <button type="submit" class="primary" id="force-change-submit">Set password</button>
+      </form>
+    </div>
+
     <header class="app-header hidden" id="app-header">
       <h1>Hybrid Routine Tracker</h1>
       <div>
         <span id="current-user"></span>
+        <button type="button" id="admin-btn" class="hidden">Admin</button>
         <button type="button" id="logout-btn">Log out</button>
       </div>
     </header>

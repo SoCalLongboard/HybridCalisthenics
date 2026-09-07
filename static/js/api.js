@@ -44,6 +44,18 @@ export const api = {
     request("/auth/login", { method: "POST", body: JSON.stringify({ username, password }) }),
   logout: () => request("/auth/logout", { method: "POST" }),
   me: () => request("/auth/me"),
+  changePassword: (currentPassword, newPassword) =>
+    request("/auth/change-password", {
+      method: "POST",
+      body: JSON.stringify({ current_password: currentPassword, new_password: newPassword }),
+    }),
+  adminListUsers: () => request("/admin/users"),
+  adminDisableUser: (id) => request(`/admin/users/${id}/disable`, { method: "POST" }),
+  adminEnableUser: (id) => request(`/admin/users/${id}/enable`, { method: "POST" }),
+  adminDeleteUser: (id) => request(`/admin/users/${id}`, { method: "DELETE" }),
+  adminPromoteUser: (id) => request(`/admin/users/${id}/promote`, { method: "POST" }),
+  adminDemoteUser: (id) => request(`/admin/users/${id}/demote`, { method: "POST" }),
+  adminResetPassword: (id) => request(`/admin/users/${id}/reset-password`, { method: "POST" }),
   catalog: () => request("/catalog"),
   progress: () => request("/progress"),
   advance: (family) => request(`/progress/${encodeURIComponent(family)}/advance`, { method: "POST" }),

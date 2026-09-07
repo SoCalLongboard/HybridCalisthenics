@@ -24,6 +24,10 @@ class User(Base):
     username = Column(String, unique=True, nullable=False, index=True)
     password_hash = Column(String, nullable=False)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
+    is_admin = Column(Boolean, nullable=False, default=False, server_default="0")
+    is_active = Column(Boolean, nullable=False, default=True, server_default="1")
+    must_change_password = Column(Boolean, nullable=False, default=False, server_default="0")
+    last_login_at = Column(DateTime, nullable=True)
 
     progress = relationship("FamilyProgress", back_populates="user", cascade="all, delete-orphan")
     sessions = relationship("WorkoutSession", back_populates="user", cascade="all, delete-orphan")

@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 
 from app.catalog import load_catalog
 from app.db import init_db
-from app.routers import auth, catalog, progress, sessions
+from app.routers import admin, auth, catalog, progress, sessions
 
 
 @asynccontextmanager
@@ -18,6 +18,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Hybrid Routine Tracker", lifespan=lifespan)
 
 app.include_router(auth.router)
+app.include_router(admin.router)
 app.include_router(catalog.router)
 app.include_router(progress.router)
 app.include_router(sessions.router)

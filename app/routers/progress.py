@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.catalog import family_names, get_exercise_at_index, get_exercise_list
-from app.deps import get_current_user, get_db
+from app.deps import get_current_active_user, get_db
 from app.models import FamilyProgress, User, WorkoutSession
 from app.progression import Level, SessionRecord, is_ready_to_advance, progress_percent
 from app.schemas import AdvanceResult, FamilyProgressOut, ProgressOut
@@ -69,7 +69,7 @@ def _build_family_progress_out(db: Session, user: User, family: str) -> FamilyPr
 
 
 @router.get("", response_model=ProgressOut)
-def get_progress(user: User = Depends(get_current_user), db: Session = Depends(get_db)) -> ProgressOut:
+def get_progress(user: User = Depends(get_current_active_user), db: Session = Depends(get_db)) -> ProgressOut:
     families = [_build_family_progress_out(db, user, family) for family in family_names()]
     return ProgressOut(families=families)
 
@@ -77,7 +77,7 @@ def get_progress(user: User = Depends(get_current_user), db: Session = Depends(g
 @router.post("/{family}/advance", response_model=AdvanceResult)
 def advance_family(
     family: str,
-    user: User = Depends(get_current_user),
+    user: User = Depends(get_current_active_user),
     db: Session = Depends(get_db),
 ) -> AdvanceResult:
     if family not in family_names():

@@ -23,8 +23,31 @@ class LoginRequest(BaseModel):
 class UserOut(BaseModel):
     id: int
     username: str
+    is_admin: bool
+    must_change_password: bool
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class ChangePasswordRequest(BaseModel):
+    current_password: str
+    new_password: str = Field(min_length=8, max_length=200)
+
+
+class AdminUserOut(BaseModel):
+    id: int
+    username: str
+    created_at: dt.datetime
+    last_login_at: dt.datetime | None
+    is_admin: bool
+    is_active: bool
+    must_change_password: bool
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class AdminPasswordResetOut(BaseModel):
+    temporary_password: str
 
 
 class FamilyProgressOut(BaseModel):

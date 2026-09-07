@@ -49,6 +49,14 @@ def auth_client(client, db_session):
     return client
 
 
+@pytest.fixture()
+def admin_client(client, db_session):
+    """A TestClient registered+logged in as the first (and thus admin) user 'admin'."""
+    client.post("/api/auth/register", json={"username": "admin", "password": "password123"})
+    client.post("/api/auth/login", json={"username": "admin", "password": "password123"})
+    return client
+
+
 def make_other_user_client(db_session):
     """Helper: create a second logged-in client ('bob') sharing the same db_session."""
 

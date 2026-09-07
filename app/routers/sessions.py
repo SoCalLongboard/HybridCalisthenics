@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from app.catalog import family_names, get_exercise_list
-from app.deps import get_current_user, get_db
+from app.deps import get_current_active_user, get_db
 from app.models import User, WorkoutSession
 from app.progression import SessionRecord, compute_caution
 from app.routers.progress import get_or_create_progress
@@ -48,7 +48,7 @@ def _get_owned_session(db: Session, user: User, session_id: int) -> WorkoutSessi
 @router.get("", response_model=list[SessionOut])
 def list_sessions(
     family: str | None = Query(default=None),
-    user: User = Depends(get_current_user),
+    user: User = Depends(get_current_active_user),
     db: Session = Depends(get_db),
 ) -> list[SessionOut]:
     if family is not None:
@@ -64,7 +64,7 @@ def list_sessions(
 @router.post("", response_model=SessionCreateResult, status_code=status.HTTP_201_CREATED)
 def create_session(
     payload: SessionCreate,
-    user: User = Depends(get_current_user),
+    user: User = Depends(get_current_active_user),
     db: Session = Depends(get_db),
 ) -> SessionCreateResult:
     _validate_family(payload.family)
@@ -109,7 +109,7 @@ def create_session(
 def update_session(
     session_id: int,
     payload: SessionUpdate,
-    user: User = Depends(get_current_user),
+    user: User = Depends(get_current_active_user),
     db: Session = Depends(get_db),
 ) -> SessionOut:
     ws = _get_owned_session(db, user, session_id)
@@ -131,7 +131,7 @@ def update_session(
 @router.delete("/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_session(
     session_id: int,
-    user: User = Depends(get_current_user),
+    user: User = Depends(get_current_active_user),
     db: Session = Depends(get_db),
 ) -> None:
     ws = _get_owned_session(db, user, session_id)
