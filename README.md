@@ -6,6 +6,8 @@ Squats, Bridges, Twists). Each user logs workout sessions against their current 
 variation in a family and is prompted to advance to the next variation once they
 consistently meet the level-3 standard.
 
+https://hybridcalisthenics.apps.michaelnaumann.com/
+
 ## Running with Docker (recommended)
 
 1. Copy `.env.example` to `.env` and set a real `SECRET_KEY`:
